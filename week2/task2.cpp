@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void add_two_nums() {
+int main() {
     int x, y;
     cout << "Please enter two numbers:";
     cin >> x >> y;
@@ -10,5 +10,5 @@ void add_two_nums() {
          << x << " and "
          << y << " is: "
          << x + y
-         << std::endl;
+         << endl;
 }

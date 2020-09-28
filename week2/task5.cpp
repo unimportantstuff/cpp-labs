@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,5 +11,5 @@ int main() {
     string number;
     cout << "\nEnter the phone number: ";
     cin >> number;
-    cout << "\nThe formatted phone number is: " << format_phone_number(number) << "\n";
+    cout << "\nThe formatted phone number is: " << format_phone_number(number) << endl;
 }

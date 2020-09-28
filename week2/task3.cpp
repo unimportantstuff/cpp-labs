@@ -16,9 +16,9 @@ int main() {
     float x, y;
     cout << "Please enter two numbers: ";
     cin >> x >> y;
-    cout << "\nThe sum of " << x << " and " << y << " is " << x + y << "\n";
-    cout << "The difference between " << x << " and " << y << " is " << x - y << "\n";
-    cout << "The product of " << x << " and " << y << " is " << x * y << "\n";
-    cout << "The distance between " << x << " and " << y << " is " << distance(x, y) << "\n";
-    cout << "The mean average of " << x << " and " << y << " is " << mean(x, y) << "\n";
+    cout << "\nThe sum of " << x << " and " << y << " is " << x + y << endl;
+    cout << "The difference between " << x << " and " << y << " is " << x - y << endl;
+    cout << "The product of " << x << " and " << y << " is " << x * y << endl;
+    cout << "The distance between " << x << " and " << y << " is " << distance(x, y) << endl;
+    cout << "The mean average of " << x << " and " << y << " is " << mean(x, y) << endl;
 }
