@@ -8,17 +8,15 @@ int getSum(int num1, int num2) {
     return sum;
 }
 
-using namespace std;
-
 int main() {
     int a, b;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    std::cout << "Enter two numbers: ";
+    std::cin >> a >> b;
 
     int sum = getSum(a, b);
-    cout << "Sum from "
-         << a << " to "
-         << b << " is "
-         << sum << "\n";
+    std::cout << "Sum from "
+              << a << " to "
+              << b << " is "
+              << sum << "\n";
 }
