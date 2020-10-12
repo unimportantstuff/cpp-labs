@@ -1,30 +1,65 @@
 #include <iostream>
+#include <string>
 
-bool isVowel(char c) {
-    return c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' || c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+bool isVowel(char c)
+{
+    switch (c)
+    {
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        return true;
+    default:
+        return false;
+    }
 }
 
-bool isConsonant(char c) {
+bool isConsonant(char c)
+{
     return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) && !isVowel(c);
 }
 
-bool isDigit(char c) {
+bool isDigit(char c)
+{
     return c >= '0' && c <= '9';
 }
 
-bool isPunctuation(char c) {
-    return c == '.' || c == ',' || c == ':' || c == ';' || c == '?' || c == '"' || c == '\'' || c == '!' || c == '_' || c == '-' || c == '/';
+bool isPunctuation(char c)
+{
+    switch (c)
+    {
+    case '.':
+    case ',':
+    case ':':
+    case ';':
+    case '?':
+    case '"':
+    case '\'':
+    case '!':
+    case '_':
+    case '-':
+    case '/':
+        return true;
+    default:
+        return false;
+    }
 }
 
-using namespace std;
-
-int main() {
+int main()
+{
     char character;
 
-    cout << "Enter a character: ";
-    cin >> character;
+    std::cout << "Enter a character: ";
+    std::cin >> character;
 
-    string message;
+    std::string message;
 
     if (isVowel(character))
         message = " is a vowel";
@@ -37,5 +72,5 @@ int main() {
     else
         message = " is unrecognized";
 
-    cout << character << message << "\n";
+    std::cout << character << message << "\n";
 }
