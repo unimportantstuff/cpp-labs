@@ -3,16 +3,14 @@
 #include <array>
 #include <iostream>
 
-using namespace std;
-
-int min(array<int, 10> nums) {
+int min(std::array<int, 10> nums) {
     int min = INT_MAX;
     for (int num : nums)
         if (num < min) min = num;
     return min;
 }
 
-int max(array<int, 10> nums) {
+int max(std::array<int, 10> nums) {
     int max = INT_MIN;
     for (int num : nums)
         if (num > max) max = num;
@@ -22,13 +20,13 @@ int max(array<int, 10> nums) {
 int main() {
     srand(time(NULL));
 
-    array<int, 10> numbers;
+    std::array<int, 10> numbers;
 
     for (int i = 0; i < 10; i++)
         numbers[i] = rand() % 100 + 1;
 
-    cout << "Random integers: ";
-    for (int num : numbers) cout << num << " ";
+    std::cout << "Random integers: ";
+    for (int num : numbers) std::cout << num << " ";
 
-    cout << "\nMinimum is " << min(numbers) << ", maximum is " << max(numbers) << "\n";
+    std::cout << "\nMinimum is " << min(numbers) << ", maximum is " << max(numbers) << std::endl;
 }

@@ -1,59 +1,52 @@
 #include <iostream>
 #include <string>
 
-bool isVowel(char c)
-{
-    switch (c)
-    {
-    case 'A':
-    case 'E':
-    case 'I':
-    case 'O':
-    case 'U':
-    case 'a':
-    case 'e':
-    case 'i':
-    case 'o':
-    case 'u':
-        return true;
-    default:
-        return false;
+bool isVowel(char c) {
+    switch (c) {
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return true;
+        default:
+            return false;
     }
 }
 
-bool isConsonant(char c)
-{
+bool isConsonant(char c) {
     return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) && !isVowel(c);
 }
 
-bool isDigit(char c)
-{
+bool isDigit(char c) {
     return c >= '0' && c <= '9';
 }
 
-bool isPunctuation(char c)
-{
-    switch (c)
-    {
-    case '.':
-    case ',':
-    case ':':
-    case ';':
-    case '?':
-    case '"':
-    case '\'':
-    case '!':
-    case '_':
-    case '-':
-    case '/':
-        return true;
-    default:
-        return false;
+bool isPunctuation(char c) {
+    switch (c) {
+        case '.':
+        case ',':
+        case ':':
+        case ';':
+        case '?':
+        case '"':
+        case '\'':
+        case '!':
+        case '_':
+        case '-':
+        case '/':
+            return true;
+        default:
+            return false;
     }
 }
 
-int main()
-{
+int main() {
     char character;
 
     std::cout << "Enter a character: ";

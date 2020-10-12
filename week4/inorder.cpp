@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
     int x, y, z;
 
     std::cout << "Enter three integers: ";
