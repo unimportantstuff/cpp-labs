@@ -72,5 +72,5 @@ int main()
     else
         message = " is unrecognized";
 
-    std::cout << character << message << "\n";
+    std::cout << character << message << std::endl;
 }

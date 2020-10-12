@@ -1,14 +1,15 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main() {
+int main()
+{
     int x, y, z;
 
-    cout << "Enter three integers: ";
-    cin >> x >> y >> z;
+    std::cout << "Enter three integers: ";
+    std::cin >> x >> y >> z;
 
-    string message;
+    std::string message;
+
     if (x < y && y < z)
         message = "In order, ascending";
     else if (y > z && x > y)
@@ -16,5 +17,5 @@ int main() {
     else
         message = "Not in order";
 
-    cout << message << "\n";
+    std::cout << message << std::endl;
 }
