@@ -10,7 +10,7 @@ int main() {
     float price, percentage;
     cout << "\nEnter the price (pounds): ";
     cin >> price;
-    cout << "\nEnter the tipe percentage: ";
+    cout << "\nEnter the tip percentage: ";
     cin >> percentage;
-    cout << "\nThe total amount to pay is: " << total_price(price, percentage);
+    cout << "\nThe total amount to pay is: \x9C" << total_price(price, percentage);
 }
