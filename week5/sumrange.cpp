@@ -18,5 +18,5 @@ int main() {
     std::cout << "Sum from "
               << a << " to "
               << b << " is "
-              << sum << "\n";
+              << sum << std::endl;
 }

@@ -16,4 +16,5 @@ int main() {
     std::cout << "Primes to " << num << " are: ";
     for (int i = 2; i <= num; i++)
         if (isPrime(i)) std::cout << i << " ";
+    std::cout << std::endl;
 }

@@ -4,14 +4,14 @@
 #include <iostream>
 
 int min(std::array<int, 10> nums) {
-    int min = INT_MAX;
+    int min = INT8_MAX;
     for (int num : nums)
         if (num < min) min = num;
     return min;
 }
 
 int max(std::array<int, 10> nums) {
-    int max = INT_MIN;
+    int max = INT8_MIN;
     for (int num : nums)
         if (num > max) max = num;
     return max;
