@@ -1,4 +1,0 @@
-this is plain text from input.txt
-it is nothing of value
-doesn't mean anything
-but remember this was in input.txt
