@@ -2,7 +2,6 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include <vector>
 
 std::string getFileContents(std::string path) {
     std::ifstream file(path);
@@ -27,8 +26,6 @@ int main(int argc, char* argv[]) {
         std::cout << "This program takes exactly 2 arguments!" << std::endl;
         return EXIT_FAILURE;
     }
-
-    std::vector<std::string> args(argv + 1, argv + argc);
 
     std::string file1(argv[1]);
     std::string file2(argv[2]);
