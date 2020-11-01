@@ -24,7 +24,17 @@ T prompt(const char* question) {
     T value;
 
     std::cout << question;
-    std::cin >> value;
+
+    /* 
+        specially for strings
+        as whitespace shouldn't
+        be ignored in their case
+    */
+    if constexpr (std::is_same<T, std::string>::value) {
+        std::getline(std::cin >> std::ws, value);
+    } else {
+        std::cin >> value;
+    }
 
     return value;
 }
