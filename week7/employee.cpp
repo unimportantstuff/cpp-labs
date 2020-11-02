@@ -8,6 +8,30 @@ struct Employee {
     Employee* manager;
 };
 
+void print_employee(Employee& e) {
+    std::cout << "\n\tName: "
+              << e.first_name
+              << " "
+              << e.last_name
+              << "\n\tID: "
+              << e.id
+              << "\n\teMail: "
+              << e.email
+              << "\n\tPhone Number: "
+              << e.phone_number
+              << "\n\tSalary: "
+              << e.salary;
+
+    if (e.manager != nullptr) {
+        std::cout << "\n\tManager Name: "
+                  << e.manager->first_name
+                  << " "
+                  << e.manager->last_name;
+    }
+
+    std::cout << std::endl;
+}
+
 int main() {
     Employee m = {
         "John",
@@ -38,4 +62,9 @@ int main() {
         2400,
         &m,
     };
+
+    std::cout << "Created employees: ";
+    print_employee(m);
+    print_employee(s1);
+    print_employee(s2);
 }
