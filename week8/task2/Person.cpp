@@ -26,5 +26,6 @@ void Person::print() {
         std::cout << f->name << " ";
     }
 
-    std::cout << std::endl;
+    std::cout << "\n"
+              << std::endl;
 }
