@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 Person::Person(std::string name)
     : name(name), friends(std::vector<Person*>()){};
